@@ -1,9 +1,8 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> { } }:
 
-pkgs.mkShell {
+with pkgs;
+mkShell {
   buildInputs = [
-
-    # keep this line if you use bash
-    pkgs.bashInteractive
+    bashInteractive
   ];
 }
