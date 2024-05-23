@@ -7,4 +7,4 @@ chart.js: chart.coffee
 	coffee -c $<
 
 data.js: periods.txt
-	./data.py -m 05:00  -l periods.txt
+	./data.py -m 10:30  -l periods.txt
